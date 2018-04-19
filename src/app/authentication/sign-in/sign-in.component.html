@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-header>
+      <div>
+        <img src="./assets/images/logo.png"
+          class="logo-img">
+        <h3>Real Estate Agency</h3>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" value="" type="email">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" value="" type="password">
+        </mat-form-field>
+        <button (click)="OnSignInClicked()" mat-raised-button color="primary">Login</button>
+        <h6>Or Continue with : </h6>
+        <a class="a-facebook" mat-raised-button color="primary">
+          <span class="fa fa-facebook"></span>Continue with Facebook
+        </a>
+        <a class="a-google" mat-raised-button color="primary">
+          <span class="fa fa-google"></span>Continue with Google
+        </a>
+        <a class="a-twitter" mat-raised-button color="primary">
+          <span class="fa fa-twitter"></span>Continue with Twitter
+          </a>
+        <h6><a 
+            (click)="SwitchToSignUp()"
+            class="a-create-account">You don't have an account yet? Register</a></h6>
+    </mat-card-content>
+</mat-card> 

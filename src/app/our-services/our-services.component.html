@@ -1,0 +1,85 @@
+<div class="container">
+  <h3>Our Services</h3>
+  <div class="navigation">
+    <ul class="nav nav-tabs row">
+      <li class="nav-item col-md-3" *ngFor="let tab of Tabs; let i = index">
+        <a class="nav-link" 
+            [class.active]="tab === selectedTab"
+            (click)="selectTab(i)">{{ tab }}</a>
+      </li>
+    </ul>
+  </div>
+  <ul class="list-group" *ngIf="selectedTab === Tabs[0]">
+      <li class="list-group-item">
+          <h6>Sub Service 01 ...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 01...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 01...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 01...</h6>
+          <p>Sub Service discription</p>
+      </li>
+  </ul>
+  <ul class="list-group" *ngIf="selectedTab === Tabs[1]">
+    
+      <li class="list-group-item">
+          <h6>Sub Service 02...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 02...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 02...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 02...</h6>
+          <p>Sub Service discription</p>
+      </li>
+  </ul>
+  <ul class="list-group" *ngIf="selectedTab === Tabs[2]">
+      <li class="list-group-item">
+          <h6>Sub Service 03...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 03...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 03...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 03...</h6>
+          <p>Sub Service discription</p>
+      </li>
+  </ul>
+  <ul class="list-group" *ngIf="selectedTab === Tabs[3]">
+      <li class="list-group-item">
+          <h6>Sub Service 04...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 04...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 04...</h6>
+          <p>Sub Service discription</p>
+      </li>
+      <li class="list-group-item">
+          <h6>Sub Service 04...</h6>
+          <p>Sub Service discription</p>
+      </li>
+  </ul>
+</div>

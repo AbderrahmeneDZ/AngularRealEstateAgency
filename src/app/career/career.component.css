@@ -1,0 +1,26 @@
+.container{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+.container h3{
+    text-align: center;
+    padding: 20px;
+}
+p{
+    padding: 20px;
+    text-justify: inter-word;
+    text-align: justify;
+}
+.btn-default{
+    background-color: white;
+    border: rgb(0, 119, 255) solid 1px;
+    color: rgb(0, 119, 255);
+}
+.form-control{
+    margin-bottom: 10px;
+}
+.remarque{
+    font-weight: 600;
+    color: rgb(0, 119, 255);
+}

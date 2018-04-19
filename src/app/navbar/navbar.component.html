@@ -1,0 +1,63 @@
+<div>
+  <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+      <div class="container">
+        <img class="img-logo"
+              src="./assets/images/logo.png" >
+        <a class="navbar-brand">Real Estate Agency</a>
+        <button class="navbar-toggler" 
+            data-toggle="collapse" 
+            data-target="#navcol-1"
+            (click)="collapse = !collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="navbar-collapse"
+              [class.collapse]="collapse"
+              (click)="collapse = true"
+              id="navcol-1">
+              <ul class="nav navbar-nav mx-auto">
+                  <li class="nav-item" 
+                    role="presentation">
+                    <a class="nav-link" 
+                       routerLink="/accueil"
+                       routerLinkActive="active current" >Home</a>
+                  </li>
+                  <li class="nav-item" 
+                    role="presentation">
+                    <a class="nav-link" 
+                        routerLink="/agence"
+                        routerLinkActive="active current">Agency</a>
+                  </li>
+                  <li class="nav-item"  
+                    role="presentation">
+                    <a class="nav-link" 
+                        routerLink="/emplois"
+                        routerLinkActive="active current">Career</a>
+                  </li>
+                  <li class="nav-item"  
+                    role="presentation">
+                    <a class="nav-link" 
+                        routerLink="/services"
+                        routerLinkActive="active current">Our Services</a>
+                  </li>
+                  <li class="nav-item" 
+                    role="presentation">
+                    <a class="nav-link" 
+                        routerLink="/contact"
+                        routerLinkActive="active current">Contact</a>
+                  </li>
+              </ul>
+            
+              <span class="navbar-text actions"
+                    [class.actions-small-size]="collapse === false">
+                  <a 
+                    class="login" 
+                    (click)="OnSignInClicked()">Login</a>
+                  <a 
+                    class="btn btn-light action-button"
+                    (click)="OnSignUpClicked()">Sign Up</a>
+              </span>
+          </div>
+      </div>
+  </nav>
+</div>

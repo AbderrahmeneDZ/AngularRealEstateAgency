@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="form-control"
+      *ngFor="let job of jobs">
+      <h4> {{ job.title }} </h4>
+      <h6> {{ job.kind }} </h6>
+      <h6>Responsibilities :</h6>
+      <ul>
+        <li *ngFor="let res of job.mission">
+          {{res}}
+        </li>
+      </ul>
+      <div *ngIf="job.expend==true">
+          <h6>Your Profile:</h6>
+          <ul>
+              <li *ngFor="let prof of job.profile">
+                {{prof}}
+              </li>
+          </ul>
+          <h6>We also offer :</h6>
+          <ul>
+              <li *ngFor="let offer of job.offers">
+                {{offer}}
+              </li>
+          </ul>
+          <a 
+            href="mailto:abderrahmene_bouidia@yahoo.com?subject=Your Subject" 
+            target="_blank" data-content="abderrahmene_bouidia@yahoo.com" 
+            data-type="mail" role="button" 
+
+            class="btn btn-primary float-right">Apply</a>
+      </div>
+      <button 
+          *ngIf="job.expend==false"
+          (click)="job.expend=!job.expend"
+          class="btn btn-default" role="button">More information</button>
+      <button 
+          *ngIf="job.expend==true"
+          (click)="job.expend=!job.expend"
+          class="btn btn-default" role="button">Reduce</button>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+        <h6 class="remarque">Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. </h6>
+    </div>
+    <div class="col-md-6">
+        <h6 class="remarque">Now residence dashwoods she excellent you. Shade being under his bed her. Much read on as draw. </h6>
+        <h6 class="remarque"><span class="fa fa-mobile fa-lg"></span> 555 666 7777</h6>
+        <h6 class="remarque"><span class="fa fa-at"></span> abderrahmene_bouidia@yahoo.com</h6>
+    </div>
+  </div>
+</div>
+

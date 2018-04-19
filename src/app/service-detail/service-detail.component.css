@@ -1,0 +1,36 @@
+.container{
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.home-img{
+    margin-top: auto;
+    margin-bottom: auto;
+    height: auto;
+    width: 100%;
+}
+.container h3{
+    text-align: center;
+    padding: 20px;
+}
+h6{
+    margin-top: 20px;
+    text-decoration: underline;
+    color: black;
+    font-weight: 600;
+}
+.fa-check{
+    color: green;
+    margin-left: 10px;
+}
+.fa-check span{
+    color: black;
+    margin-left: 5px;
+}
+.check-div{
+    padding-bottom: 20px;
+}
